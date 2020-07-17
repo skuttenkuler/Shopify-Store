@@ -1,0 +1,10 @@
+development:
+  password: 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
+  theme_id: "105408856232"
+  store: sams-vinyls.myshopify.com
+ignore_files:
+  - config/settings_data.json
+  - "*.png" # patterns that start with * need to be quoted to have vaild yaml
+  - /\.(txt|gif|bat)$/
+  ignores:
+  - themekit_ignores # file to load ignore patterns, check out the ignore file example
