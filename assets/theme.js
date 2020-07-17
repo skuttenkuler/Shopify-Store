@@ -7561,3 +7561,23 @@ function onYouTubeIframeAPIReady() {
 }
 
 $(theme.init);
+
+$(document).ready(function(){
+    //for each item in carousel
+    $('.carousel').each(function(){
+      //grab attribute
+      var num_slides = $(this).data('slides');
+      $(this).slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: num_slides,
+        slidesToScroll: 4,
+      });
+    });
+    $('.carousel-images').slick({
+        infinite:false,
+        autoplay:true,
+        autoplaySpeed:2000,
+        });
+});
